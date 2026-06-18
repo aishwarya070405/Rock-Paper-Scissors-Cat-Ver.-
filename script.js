@@ -15,6 +15,7 @@ return options [randomc];    }
 
 const drawgame = () => {
     msg.innerText = "It was a Draw. Play AGAIN";
+    msg.style.backgroundColor = "white";
 }
 
 const showwinner = (userwin, userchoice, compchoice) => {
@@ -22,13 +23,13 @@ const showwinner = (userwin, userchoice, compchoice) => {
         userscore++;
         userscorepara.innerText = userscore;
         msg.innerText = `You Win! ${userchoice} beats ${compchoice}`;
-        msg.style.backgroundColor = "green";
+        msg.style.backgroundColor = "#90EE90";
         msg.style.innerText = "black";
     } else {
         compscore++;
         compscorepara.innerText = compscore;
         msg.innerText = `You lose. ${compchoice} beats ${userchoice}`;
-        msg.style.backgroundColor = "red";
+        msg.style.backgroundColor = "#ff746c";
     }
  }
 
